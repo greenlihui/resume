@@ -1,0 +1,121 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Hui Li} % Your name
+% \address{B-1 \\ II , U.P. 208016} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{(+1)~608-667-6048 \\ huili98@outlook.com \\ https://huili.tech} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+
+{\bf University of Wisconsin-La Crosse (La Crosse, WI)} \hfill {\em Sept 2018 - May 2020} 
+\\ Master of Software Engineering \hfill {GPA: 3.68/4.00}
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+{\bf South-Central University for Nationalities (Wuhan, China)} \hfill {\em Sept 2015 - June 2018} 
+\\ Bachelor of Software Engineering \hfill {GPA: 4.09/5.00}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+\begin{rSubsection}{RoloBox}{Sept. 2019 - Apr. 2020}{Mobile Contact Management System with Facial Recognition}{Capstone Project}
+\item Agile methodology, Scrum specifically, used in development process.
+\item UI designed with Material system and prototyped with Sketch. API design followed with REST paradigm.
+\item Use of AWS S3 for image cloud storage, AWS Rekognition for facial analysis. Use of ML kit from Google Firebase for real-time face detection.
+\item Web application developed with Angular, mobile client developed with Flutter.
+\item Security implementation: Authentication and authorization middleware used in Node.js, XSS and CSRF protection enabled both in client and server side.
+\item Keyword: Angular, Node.js, Flutter, MongoDB, AWS, Firebase
+\end{rSubsection}
+
+%------------------------------------------------
+\begin{rSubsection}{WeatherList}{Apr. 2019 - May 2019}{A Web Application that Manage A List of Cities and Their Weather Conditions}{Course Project}
+\item Use of a third-party endpoint for providing weather data given a latitude and longitude.
+\item Server developed with Spring Boot, use with Thymeleaf template engine for server side rendering.
+\item Spring security configuration enabled for user session management and CSRF protection.
+\end{rSubsection}
+
+%------------------------------------------------
+\begin{rSubsection}{TopoNet}{Feb. 2019 - Apr. 2019}{Educational Tool for Demonstrating Network Topology}{Group Project}
+\item Use of Angular for front-end, Cytoscape.js for node visualization. Endpoints followed RESTful paradigm.
+\item Use of Queue data structure and Promise in JS to prevent callback hell during node animation. Use of Observable interface from RxJS for sibling components interaction in Angular.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{SimpleCart}{Sept. 2018 - Nov. 2018}{A Shopping Software with Cart Support}{Course Project}
+\item Use of Bootstrap and JQuery for front-end, Java Servlet and JDBC for backend, MySQL as database.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Academic Presentation
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Academic Presentation}
+Hui Li and Kenny Hunt, RoloBox: An Image-Aware Mobile Application using the AWS Ecosystem, The 53rd Annual Midwest Instruction and Computing Symposium(moved online), April 3, 2020.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages &  JavaScript, Java, HTML5, CSS, Dart \\
+Skills \& Framework & Angular, Node.JS/Express, MongoDB, Flutter, Spring Boot \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% \begin{rSection}{Relevant Courses}
+% \itab{\textbf{Core Courses}} \tab{}  \tab{\textbf{Other Courses}}
+% \\ \itab{Fluid Mechanics \& its applications } \tab{}  \tab{Computational Methods in Engineering}
+% \\ \itab{Thermodynamics} \tab{}  \tab{Fundamental of Computing} 
+% \\ \itab{Heat Transfer \& its applications} \tab{}  \tab{Probability and Statistics} 
+% \\ \itab{Mass Transfer \& its applications} \tab{} \tab{Calculus \& Linear Algebra}
+% \\ \itab{Transport Phenomena (ongoing)} \tab{} \tab{Introduction to Mechanics}
+% % \\ \itab{Process Control (ongoing)} \tab{} \tab{Electrodynamics}
+% \end{rSection}
+
+
+\end{document}

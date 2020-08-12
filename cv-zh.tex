@@ -1,0 +1,118 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[UTF8]{ctex}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{李辉} % Your name
+% \address{B-1 \\ II , U.P. 208016} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{(+86)~159-2730-4882 \\ huili98@outlook.com \\ https://huili.tech} % Your phone number and email
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{教育背景}
+
+{\bf 威斯康辛州立大学拉克罗斯分校 (美国威斯康辛)} \hfill {\em 2018.09 - 2020.05} 
+\\ 软件工程硕士 \hfill {GPA: 3.68/4.00}
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+{\bf 中南民族大学 (中国武汉)} \hfill {\em 2015.09 - 2018.06} 
+\\ 软件工程学士 \hfill {GPA: 4.09/5.00}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{项目经验}
+
+\begin{rSubsection}{RoloBox}{2019.09 - 2020.04}{移动智能通讯录，通讯录和相册自动绑定并可支持特征筛选联系人}{毕业设计}
+\item 遵循软件工程开发实践，采用 Scrum 的开发过程，分别使用 Angular 和 Flutter 开发网页端和移动端
+\item 遵循 Material Design 使用 Sketch 设计产品原型，遵循 Restful 规范设计 API 端点
+\item 使用 AWS S3 做图片存储和 AWS Rekognition 做面部分析。移动端中使用 Google ML kit 做实时人脸检测
+\item 安全方面使用 Passportjs 进行鉴权，实现中间件进行资源授权并配置开启 XSS 和 CSRF 防护
+\item 项目链接：https://github.com/greenlihui/rolobox-node
+\end{rSubsection}
+
+%------------------------------------------------
+\begin{rSubsection}{WeatherList}{2019.04 - 2019.05}{一个查询天气的网页应用}{课程设计}
+\item 使用第三方天气接口根据经纬度获取当地天气情况并保存当前城市
+\item 一次 Spring Boot 的实践，使用 Thymeleaf 做模版引擎尝试服务端渲染
+\item 使用 Bootstrap 快速搭建界面并配置 Spring Security 使其开启用户会话管理和 CSRF 防护
+\end{rSubsection}
+
+%------------------------------------------------
+\begin{rSubsection}{TopoNet}{2019.02 - 2019.04}{一个展示网络拓扑结构的教育工具}{小组项目}
+\item 由另外两名组员使用 Spring Boot 搭建后端，自己使用 Angular 和 Cytoscape.js 完成前端，共同设计并实现基于 RESTful 的交互接口
+\item 在使用 Cytoscape 展示节点路径动画时借助队列和 Promise 防止 Callback Hell
+\item 在 Angular 使用过程中，使用 Observable 接口结合 service 实现兄弟组件交互
+\item 在项目中期导师模拟，添加传输节点可能失效的情况下与队友合作依旧按时完成项目，并取得 A 的总成绩。
+\end{rSubsection}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	Academic Presentation
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{学术发表}
+Hui Li and Kenny Hunt, RoloBox: An Image-Aware Mobile Application using the AWS Ecosystem, The 53rd Annual Midwest Instruction and Computing Symposium(moved online), April 3, 2020.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{综合技能}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+技术栈 & Angular, Node.JS/Express, MongoDB, Flutter, Spring Boot \\
+奖项 & 2017.4 蓝桥杯省赛 Java B 组一等奖，国赛三等奖，2016.9 国家奖学金 \\
+其他 & 雅思总分 7.0/9.0(阅读单项 8.5/9.0) \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% \begin{rSection}{Relevant Courses}
+% \itab{\textbf{Core Courses}} \tab{}  \tab{\textbf{Other Courses}}
+% \\ \itab{Fluid Mechanics \& its applications } \tab{}  \tab{Computational Methods in Engineering}
+% \\ \itab{Thermodynamics} \tab{}  \tab{Fundamental of Computing} 
+% \\ \itab{Heat Transfer \& its applications} \tab{}  \tab{Probability and Statistics} 
+% \\ \itab{Mass Transfer \& its applications} \tab{} \tab{Calculus \& Linear Algebra}
+% \\ \itab{Transport Phenomena (ongoing)} \tab{} \tab{Introduction to Mechanics}
+% \\ \itab{Process Control (ongoing)} \tab{} \tab{Electrodynamics}
+
+% \end{rSection}
+
+
+\end{document}
